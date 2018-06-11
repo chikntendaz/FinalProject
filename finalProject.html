@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset = "utf-8" />
+  <title>Final Project</title>
+  <link rel = "stylesheet" type = "text/css" href = "finalProject.css">
+</head>
+
+<body id = "body">
+  <p id = "home">RUNNER</p>
+  <p id = "home1">the game</p>
+
+  <button id = "b" onClick = "hide()">START</button>
+  <button id = "b1">+1</button>
+  <p id = "p"></p>
+
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDBuIxuwOkZkiQ1YBr0B0-QKxP2_UR2PGI",
+    authDomain: "final-project-7c115.firebaseapp.com",
+    databaseURL: "https://final-project-7c115.firebaseio.com",
+    projectId: "final-project-7c115",
+    storageBucket: "",
+    messagingSenderId: "532945477971"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  <canvas id = "myCanvas" width = "1650" height = "800"></canvas>
+  <script src = "finalProject.js"></script>
+</body>
+</html>
